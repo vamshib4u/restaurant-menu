@@ -2,20 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Menu</title>
+  <title>Restaurant Menu</title>
   <style>
     html, body {
       margin: 0;
-      height: 100%;
+      padding: 0;
+    }
+    .specials {
+      text-align: center;
+      background: #fffbe6;
+      padding: 20px;
+    }
+    .specials img {
+      max-width: 100%;
+      height: auto;
     }
     iframe {
       width: 100%;
-      height: 100%;
+      height: 90vh;
       border: none;
     }
   </style>
 </head>
 <body>
+
+  <div class="specials">
+    <h2>Today's Special</h2>
+    <img src="specials.jpg" alt="Today's Special Dish">
+    <p>Try our chef's favorite Masala Dosa & Filter Coffee combo!</p>
+  </div>
+
   <iframe src="menu.pdf"></iframe>
+
 </body>
 </html>
