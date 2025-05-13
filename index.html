@@ -1,27 +1,33 @@
 <!DOCTYPE html>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Restaurant Menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Menu</title>
   <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-    }
-    .specials {
+    body {
+      font-family: Arial, sans-serif;
       text-align: center;
-      background: #fffbe6;
       padding: 20px;
+      margin: 0;
     }
     .specials img {
       max-width: 100%;
       height: auto;
+      margin-bottom: 10px;
     }
-    iframe {
-      width: 100%;
-      height: 90vh;
-      border: none;
+    .menu-link {
+      display: inline-block;
+      padding: 15px 30px;
+      background-color: #ff914d;
+      color: white;
+      text-decoration: none;
+      font-size: 1.2em;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .menu-link:hover {
+      background-color: #e66b00;
     }
   </style>
 </head>
@@ -29,10 +35,13 @@
 
   <div class="specials">
     <h2>Today's Special</h2>
-    <img src="specials.jpg" alt="Today's Special Dish">
+    <img src="specials.jpg" alt="Today's Special">
+    <p>Don't miss our Masala Dosa + Filter Coffee combo!</p>
   </div>
 
-  <iframe src="menu.pdf"></iframe>
+  <a class="menu-link" href="menu.pdf" target="_blank" rel="noopener noreferrer">
+    📖 View Our Full Menu
+  </a>
 
 </body>
 </html>
